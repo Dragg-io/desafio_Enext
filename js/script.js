@@ -7,8 +7,7 @@ function viewProduct(productID) {
   document.getElementById('price').innerHTML = "$"+product.price;
   document.getElementById('productModal').style.display='block';
 	for(I in product.ingredients) {
-  	document.getElementById('ingredients').innerHTML += "<li>"+product.ingredients[I]+"</li>";
-  	I++;
+  	document.getElementById('ingredients').innerHTML += "<li>"+product.ingredients[I]+"</li>";  
   }  
 
 }
