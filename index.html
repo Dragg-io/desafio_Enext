@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Merlin's Potions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/potions.js"></script>
+	<script src="https://use.fontawesome.com/df208fd99d.js"></script>
+
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<span id="logoName">MERLIN'S</span> POTIONS<br>
+			<cite>&mdash;fine potion since 1026&mdash;</cite>
+			
+		</div>
+		<div id="search">
+			<input type="search" name="search" placeholder="Search our stock"><button><span class="fa fa-search"></span></button>
+		</div>
+		
+		<div id="headerText">
+			Free Shipping<br>
+			on orders over $50
+		</div>
+		<div id="bag">
+			<span class="fa fa-shopping-bag"></span> BAG:
+		</div>
+	</header><br>
+	<nav id="menu">
+		<ul>
+			<a href="#"><li>Potions</li></a>
+			<a href="#"><li>Ingredients</li></a>
+			<a href="#"><li>Books</li></a>
+			<a href="#"><li>Supplies</li></a>
+			<a href="#"><li>Charms</li></a>
+			<a href="#"><li>Clearence</li></a>
+			<a href="#" class="lastMenu"><li>Sing in</li></a>
+			<a href="#" class="lastMenu"><li>Sing up</li></a>
+		</ul>
+	</nav><br>
+	<div id="panel">
+		<h1>Potions</h1>
+		<content id="products">
+			<div onclick="viewProduct(1)"><img src="img/aging-potion.png"><p>Aging Potion - <span class="price"></span></p></div>
+			<div onclick="viewProduct(2)"><img src="img/bulgeye-potion.png"><p>Bulgeye Potion - <span class="price"></span></p></div>
+			<div onclick="viewProduct(3)"><img src="img/dragon-tonic.png"><p>Dragon Tonic - <span class="price"></span></p></div>
+			<div onclick="viewProduct(4)"><img src="img/love-potion.png"><p>Love Potion - <span class="price"></span></p></div>
+			<div onclick="viewProduct(5)"><img src="img/polyjuice-potion.png"><p>Polyjuice Potion - <span class="price"></span></p></div>
+			<div onclick="viewProduct(6)"><img src="img/sleeping-draught.png"><p>Sleeping Draught - <span class="price"></span></p></div>
+			<!-- MODAL TEMPLATE -->
+			<section id="productModal" class="w3-modal">
+			    <section class="w3-modal-content w3-animate-top w3-card-4">
+			        <span onclick="document.getElementById('productModal').style.display='none'" 
+			        class="w3-button w3-display-topright">&times;</span>
+			        <section id="productDescription">
+			        	<section>
+			        		<img id="imgProduct" src=""><br>	        	
+			        	</section>
+			        	<section>
+				        	<h3 id="name"></h3>
+				        	<h3>Use/Effect:</h3>
+				        	<p id="description"></p>
+				        	<h3>Ingredients:</h3>
+				        	<ul id="ingredients">
+				        	</ul>
+				        	<h3>Price:</h3>
+				        	<p id="price"></p>
+				        	<button>ADD TO CART</button>
+			        	</section>
+			    	</section>
+
+				</section>
+		  </section>
+		</content>
+	</div>
+	<footer>
+		<div id="sectionSocial">
+			<div>
+				<ul>
+					<a href="#"><li>COMPANY</li></a>
+					<a href="#"><li>CONTACT US</li></a>
+					<a href="#"><li>SHIPPING</li></a>
+					<a href="#"><li>RETURNS</li></a>
+					<a href="#"><li>CARRERS</li></a>
+				</ul>
+			</div>
+			<div id="redesSociais">
+			<a href="#"><span class="fa fa-facebook-square"></span></a> <a href="#"><span class="fa fa-twitter-square"></span></a> <a href="#"><span class="fa fa-pinterest-square "></span></a> <a href="#"><span class="fa fa-tumblr-square"></span></a> <a href="#"><span class="fa fa-google-plus-square"></span></a>
+			</div>
+		</div>
+		<div id="sectionContact">
+			<form action="#" method="POST" onsubmit="alert('Thanks, we\'ll send you an owl soon!')">
+				<label>
+					Sign up our Newsletter<br>
+					Sign up our newsletter & get exclusive discounts!<br>
+					<input type="email" name="email" placeholder="Enter your email"><button>SUBMIT</button>
+				</label>
+			</form>
+		</div><br>
+		<cite id="copyright">&copy; 2017 Merlin's Potion. All Rights Reserved</cite>
+	</footer>
+</body>
+</html>
